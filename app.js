@@ -20,7 +20,7 @@ game.addEventListener("click", (e) => {
   tg.innerHTML = player;
   moves++;
   if (gameOver(r, c, player)) {
-    alert("Congratulations ${player}! You won!");
+    alert(`Congratulations Player ${player}! You won!`);
     btnReset.disabled = false;
   } else if (moves == 9) {
     alert("TIE!");
